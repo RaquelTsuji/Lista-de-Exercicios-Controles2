@@ -10,7 +10,7 @@ public class Cliente {
 			System.out.printf("\nCredito restante na conta: %s", Resto);
 		}
 		else 
-if (Novo > LimiteCredito) { 
+			if (Novo > LimiteCredito) { 
 				int Resto;
 				Resto = Novo - LimiteCredito;
 				System.out.printf ("\nLimite de creditos excedido por: %s", Resto);
