@@ -1,0 +1,24 @@
+public class Cliente {
+	
+	public Cliente(int Saldo, int Itens, int TotalCredito, int LimiteCredito) {
+		int Novo = Saldo + Itens - TotalCredito; 
+		System.out.printf ("\nNovo saldo: %s", Novo);
+		
+		if (Novo <= LimiteCredito) {
+			int Resto;
+			Resto = LimiteCredito-Novo;
+			System.out.printf("\nCredito restante na conta: %s", Resto);
+		}
+		else 
+if (Novo > LimiteCredito) { 
+				int Resto;
+				Resto = Novo - LimiteCredito;
+				System.out.printf ("\nLimite de creditos excedido por: %s", Resto);
+		}
+	}
+		
+	public void Informacoes (int NumConta, int Saldo, int Itens, int TotalCredito, int LimiteCredito) {
+		System.out.println ("Informacoees inseridas pelo cliente");
+		System.out.printfln ("Numero da conta: %s \nSaldo no inicio do mes: %s \nTotal de itens cobrados no mes: %s \nTotal de creditos aplicados no mes: %s \nLimite de credito: %s", NumConta, Saldo, Itens, TotalCredito, LimiteCredito);
+	}
+}
