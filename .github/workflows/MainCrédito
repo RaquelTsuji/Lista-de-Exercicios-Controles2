@@ -1,0 +1,35 @@
+import java.util.*;
+public class Programa {
+	public static int NumConta; 
+	public static int Saldo; 
+	public static int Itens; 
+	public static int TotalCredito; 
+	public static int LimiteCredito; 
+            public static int NovoSaldo;
+
+public static void main (String[] args) {
+		while (Saldo != -1) {
+			Scanner conta = new Scanner(System.in);
+
+			System.out.println ("Entre com o numero da conta: ");
+			NumConta = conta.nextInt();
+
+			System.out.println ("Entre com o saldo do inicio do mes: ");
+			Saldo = conta.nextInt();
+
+			System.out.println ("Entre com o total dos itens cobrados no mes: ");
+			Itens = conta.nextInt();
+
+			System.out.println ("Entre com o total de creditos aplicados no mes: ");
+			TotalCredito = conta.nextInt();
+
+			System.out.println ("Entre com o limite de credito autorizado: ");
+			LimiteCredito = conta.nextInt();
+		
+			Cliente Conta = new Cliente(Saldo, Itens, TotalCredito, LimiteCredito);
+			Conta.Informacoees(NumConta, Saldo, Itens, TotalCredito, LimiteCredito);
+			
+			System.out.print ("\n");
+		}
+	}
+}
