@@ -5,7 +5,7 @@ public class Programa {
 	public static int Itens; 
 	public static int TotalCredito; 
 	public static int LimiteCredito; 
-            public static int NovoSaldo;
+        public static int NovoSaldo;
 
 public static void main (String[] args) {
 		while (Saldo != -1) {
